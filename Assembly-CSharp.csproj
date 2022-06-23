@@ -36,8 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Chan/PlayerTest.cs" />
      <Compile Include="Assets/Chan/Portal.cs" />
+     <Compile Include="Assets/Ito/FPSController.cs" />
+     <Compile Include="Assets/Chan/Ray.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -6,15 +6,10 @@ public class Portal : MonoBehaviour
 {
 
     [SerializeField]public Transform portalOut;   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
+        transform.position = portalOut.position + new Vector3(1,0,0);//プレイヤーを出口に転送する
         
     }
 
