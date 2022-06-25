@@ -23,7 +23,6 @@ public class Ray : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             RaycastHit hit;
-            
             if(Physics.Raycast(Player.position,PlayerCamera.forward, out hit, Mathf.Infinity))
             {
                 //Debug.DrawRay(Player.position,PlayerCamera.forward, Color.yellow);
