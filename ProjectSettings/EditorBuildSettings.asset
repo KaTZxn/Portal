@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/kikuchi/GoalScene.unity
+    guid: 48d191d73eada6a49be6d94a9d26ad53
+  - enabled: 1
+    path: Assets/Scenes/kikuchi/MainScene.unity
+    guid: 4151118fcedc68b4bbb7530aab5447f4
   m_configObjects: {}
