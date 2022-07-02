@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 326659569}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 441903645}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 838295804}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 1073378206}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 1074081074}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 1130078239}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1174,7 +1174,7 @@ GameObject:
   - component: {fileID: 1359081258}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Unplaceable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1616,6 +1616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalIn
       objectReference: {fileID: 0}
+    - target: {fileID: 2171112756748303715, guid: 76a260227f8484cdcbc7a6c2386fdf19, type: 3}
+      propertyPath: m_TagString
+      value: Portal
+      objectReference: {fileID: 0}
     - target: {fileID: 2171112756748303724, guid: 76a260227f8484cdcbc7a6c2386fdf19, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1809,6 +1813,10 @@ PrefabInstance:
     - target: {fileID: 3527136032025710077, guid: 86c225311f73a4329bc79440fc04f4aa, type: 3}
       propertyPath: m_Name
       value: PortalOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527136032025710077, guid: 86c225311f73a4329bc79440fc04f4aa, type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86c225311f73a4329bc79440fc04f4aa, type: 3}

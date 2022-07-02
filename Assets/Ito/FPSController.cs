@@ -5,7 +5,7 @@ using UnityEngine;
 public class FPSController : MonoBehaviour
 {
     float x, z;
-    float speed = 0.1f;
+    [SerializeField]float speed = 0.1f;
 
     public GameObject cam;
     Quaternion cameraRot, characterRot;
@@ -13,7 +13,7 @@ public class FPSController : MonoBehaviour
 
     bool cursorLock = true;
 
-    //•Ï”‚ÌéŒ¾(Šp“x‚Ì§ŒÀ—p)
+    //ï¿½Ïï¿½ï¿½ÌéŒ¾(ï¿½pï¿½xï¿½Ìï¿½ï¿½ï¿½ï¿½p)
     float minX = -90f, maxX = 90f;
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class FPSController : MonoBehaviour
         cameraRot *= Quaternion.Euler(-yRot, 0, 0);
         characterRot *= Quaternion.Euler(0, xRot, 0);
 
-        //Update‚Ì’†‚Åì¬‚µ‚½ŠÖ”‚ğŒÄ‚Ô
+        //Updateï¿½Ì’ï¿½ï¿½Åì¬ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½ï¿½ï¿½Ä‚ï¿½
         cameraRot = ClampRotation(cameraRot);
 
         cam.transform.localRotation = cameraRot;
@@ -78,10 +78,10 @@ public class FPSController : MonoBehaviour
         }
     }
 
-    //Šp“x§ŒÀŠÖ”‚Ìì¬
+    //ï¿½pï¿½xï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½Ìì¬
     public Quaternion ClampRotation(Quaternion q)
     {
-        //q = x,y,z,w (x,y,z‚ÍƒxƒNƒgƒ‹i—Ê‚ÆŒü‚«jFw‚ÍƒXƒJƒ‰[iÀ•W‚Æ‚Í–³ŠÖŒW‚Ì—Êj)
+        //q = x,y,z,w (x,y,zï¿½Íƒxï¿½Nï¿½gï¿½ï¿½ï¿½iï¿½Ê‚ÆŒï¿½ï¿½ï¿½ï¿½jï¿½Fwï¿½ÍƒXï¿½Jï¿½ï¿½ï¿½[ï¿½iï¿½ï¿½ï¿½Wï¿½Æ‚Í–ï¿½ï¿½ÖŒWï¿½Ì—Êj)
 
         q.x /= q.w;
         q.y /= q.w;

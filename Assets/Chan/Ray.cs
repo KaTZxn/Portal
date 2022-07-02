@@ -24,8 +24,10 @@ public class Ray : MonoBehaviour
         {
             RaycastHit hit;
             if(Physics.Raycast(Player.position,PlayerCamera.forward, out hit, Mathf.Infinity))
-            {
-                //Debug.DrawRay(Player.position,PlayerCamera.forward, Color.yellow);
+            {   
+                if(hit.transform.gameObject.tag == "Unplaceable" )
+                    return;
+                Debug.Log(hit.transform.gameObject.tag);
                 Debug.Log(hit.point);
                 PortalOut.SetPositionAndRotation(hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
             }
